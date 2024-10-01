@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS -->
+    <!--<link rel="stylesheet" href="/static/css/vendor.min.css">
+    <link rel="stylesheet" href="/static/css/main.css">-->
+</head>
+<body>
+
+    {% load crispy_forms_tags %}
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+
+                <div class="car">
+                    <div class="card-body">
+
+                        <h2>Busca los apuntes</h2>
+
+                        <hr>
+
+                        <form method="POST">
+
+                            {% csrf_token %}
+                            {{ form | crispy }}
+
+                            <input type="submit" value="registrar" class="btn btn-success">
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

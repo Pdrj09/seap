@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: sans-serif; }
+table, th, td { border: 1px solid #A0A0A0; border-collapse: collapse; padding: 3px; vertical-align: top; }
+li { }
+</style>
+<title>export of TreeSheets file /home/pedro/TreeSheets-relocatable/examples/tutorial.cts</title>
+<meta charset="UTF-8" />
+</head>
+<body>
+
+  <table style="border-width: 2pt; font-size: 13pt;">
+  <tr>
+  <td style="font-style: italic;background-color: #F9F9F9;color: #0000FF;">
+  </td>
+  </tr>
+  <tr>
+  <td style="font-style: italic;background-color: #F9F9F9;color: #0000FF;">Welcome to TreeSheets!
+  </td>
+  </tr>
+  <tr>
+  <td style="background-color: #F9F9F9;">(1) This file is a live tutorial. Simply by following along with the numbers in front of the text, you can learn to use all TreeSheets functionality quickly and easily!
+    <table style="border-width: 2pt; font-size: 12pt;">
+    <tr>
+    <td style="font-weight: bold;">The basics
+      <table style="border-width: 2pt; font-size: 11pt;">
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(2) You found step 2! Good, now lets try inserting text. Each of these text boxes is called a "cell". See the empty cell between (2) and (3)? Click anywhere inside it to select it 
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(3) The cell above should be selected (have a thick black border around it). Now type something, and you see any text ends up in the selected cell. Notice how when you started typing, a cursor appeared, and the selection box became thinner. This signals the cell is in text edit mode, so things like cursor keys, delete etc, work on the current text. You can also double click to get into text edit mode, or press enter. To exit, press enter again, or press escape, or just select another cell.
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(4) There is an even better way to insert text however. See the dotted lines between cells? These we call "grid lines". Select (click on) the grid line between (4) and (5)
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(5) The line above here should be highlighted. Now start typing text again, and notice how a new cell automatically got inserted between (4) and (5). This also works on the borders of the cells. This is the natural way to extend any TreeSheet: find a location where you want to add information, and just start typing!
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(6) You can also navigate across grid lines and cells without using the mouse, for even quicker editing: make sure this cell is selected, and then press cursor key UP and DOWN a few times.
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(7) Deleting cells works in just the same way. Make sure you got any grid line above selected, and then press BACKSPACE to remove the cell above it (or before it), or press DELETE to remove the cell below it (or after it). This works analogous to how text editors and word processors work. Alternatively, simply selecting any cells (by clicking/dragging) and then pressing DELETE to remove all of them also works.
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(8) If you have deleted a bunch of lines above (hopefully not this one!) now is a good time to try out undo! Press CTRL+Z repeatedly to bring your deletions back. TreeSheets has unlimited undo, so just holding down CTRL+Z for a while will restore the document back to its original state. CTRL+Y redoes.
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>On OS X, wherever this tutorial refers to CTRL, use CMD instead. ALT is the same as the OPTION key.
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      </table>
+    </td>
+    <td style="font-weight: bold;">Grids
+      <table style="border-width: 2pt; font-size: 11pt;">
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(9) As you may have already noticed, TreeSheets can nest grids of cells. Each cell can contain its own grid. This cell for example has a sub grid.
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td style="font-family: monospace;background-color: #F9F9F0;color: #800000;">Tequila
+        </td>
+        <td style="font-family: monospace;background-color: #FFFF80;color: #800000;">2
+        </td>
+        </tr>
+        <tr>
+        <td style="font-family: monospace;background-color: #F9F9F0;color: #800000;">Gran Marnier
+        </td>
+        <td style="font-family: monospace;background-color: #FFFF80;color: #800000;">1
+        </td>
+        </tr>
+        <tr>
+        <td style="font-family: monospace;background-color: #F9F9F0;color: #800000;">Lime juice
+        </td>
+        <td style="font-family: monospace;background-color: #FFFF80;color: #800000;">0.5
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(10) To add a grid to any cell, select the cell and press INSERT or SHIFT+ENTER. Try it on this cell, you should get a 1x1 grid below this text
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(11) Try expanding the cell you made in (10) by selecting one of its 4 gridlines and typing text until you have at least a 3x3 grid. Also try moving around it with the cursor keys in all directions.
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(12) Now let's try moving things around in grids. Select an entire column in a grid (such as the numbers in the grid contained in (9)) by dragging from the top cell in the row to the bottom. Much like in spreadsheets (and unlike some other applications), dragging in TreeSheets is for expanding a selection, not for moving. Now Press CTRL+LEFT cursor key or CTRL+RIGHT to shift the data around.
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(13) You can copy cells, for example, select this one, copy with CTRL+C, then select any grid line above and press CTRL+V. If you select multiple cells, the selection will be inserted at the destination as multiple lines. Try it. Cutting (CTRL+X) or Deleting multiple cell selections works similarly intuitively. If inserting cells "inline" on a paste is undesirable, you can always create a new grid first, and then paste on that, to create hierarchy.
+      </td>
+      </tr>
+      </table>
+    </td>
+    </tr>
+    <tr>
+    <td style="font-weight: bold;">Cell formatting &amp; Zoom
+      <table style="border-width: 2pt; font-size: 11pt;">
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(14) Text in a cell is akin to a single paragraph. It is split up in lines automatically depending on the column width of whatever column it is in. How wide the columns should be depends on how you prefer to structure your TreeSheet overall. You can see the column width in the status bar (for the column the mouse is over). Make sure this cell is selected, and then hold ALT and roll the mousewheel to see what happens (or ALT+PGUP/PGDN). This cell should be reformatted automatically, as well as other cells in this column, and any grids inside this column. Note that the column width specifies the maximum number of characters per line, so it won't make a grid wider once every cell is on a single line.
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>On some Mac keyboards, PGUP/PGDN is emulated with FN+UP/DOWN. Also, the scrollwheel is instead a swipe on the trackpad (or magic mouse).
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(15) A more powerful option to change the space a cell takes up on screen (good for indicating the relative importance of something) is to change the text size. Select this cell, hold SHIFT and roll the mousewheel (or SHIFT+PGUP/PGDN).
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(16) Notice how if you keep making it smaller, eventually text will be rendered as individual pixels. This may seem useless, but is actually a neat way of information management that replaces folding/unfolding of hierarchies so prevalent in other applications.
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(17) For example, this cell contains a tiny grid. Select this cell, then hold CTRL and roll the mouse wheel forward 3x to zoom into this cell (or CTRL+PGUP/PGDN).
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>(18) You couldn't read this text before, but now you can!
+        </td>
+        </tr>
+        <tr>
+        <td>(19) When you zoom in, TreeSheets sets the base text size to the average size of the top level grid shown. When you change the text size with SHIFT+scrollwheel, you change the relative size of text. That means it depends on the zoom level how big that text appears. This may sound complicated, but the net effect is that you can make text really small yet see more of it when you zoom in.
+        </td>
+        </tr>
+        <tr>
+        <td>(20) The idea is that you use small sub grids like this one to store information (such as a todo list for a specific project) that you want to be available in your overal TreeSheet, but you don't want it to take up space. Reading or editing it is always just a flick of the mousewheel away.
+        </td>
+        </tr>
+        <tr>
+        <td>(21) Also, setting text size is something you have to generally do only once, whereas tree folding/unfolding or scrolling as you end up doing in other applications is something you do every time you want to view the information. TreeSheets makes navigating large amounts of information less of a chore, and easier to overview (the pixel sized text still gives an impression of how much information is contained inside the cell, and the structure of it).
+        </td>
+        </tr>
+        <tr>
+        <td>(22) To make this text readable at the top level again, select cells (18..23) (not 17), zoom out twice (mousewheel back), and then SHIFT+mousewheel forward until this becomes readable again.
+        </td>
+        </tr>
+        <tr>
+        <td>(23) If you now want to make this smaller, select the same cells, and use SHIFT+mousewheel backward to reduce the size.
+        </td>
+        </tr>
+        <tr>
+        <td>(24) Notice the greyed out text you see above the header text when you are zoomed in? This is called the context, and helps you remember what part of the treesheet you zoomed in to.
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">if instead you prefer to completely hide a grid out of sight, you can using folding (F10 on Windows, CTRL+F10 on other platforms). Try pressing it repeatedly on this cell to see the effect
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>This cell and the ones below will be hidden!
+        </td>
+        </tr>
+        <tr>
+        <td>notice that a cell that has a folded grid gains a '+' icon as its image, denoting that there is extra information that can be shown. If you unfold it, the image will automatically dissapear
+        </td>
+        </tr>
+        <tr>
+        <td>cells will also automatically be unfolded if you use functions such as "search next" to jump between cells that are not currently visible.
+        </td>
+        </tr>
+        <tr>
+        <td>Though folding may be a familiar operation you know from other applications, shrinking text to become tiny (see 17) will give you a better overview over your information, try it out! 
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      </table>
+    </td>
+    <td style="font-weight: bold;">Rendering and Layout
+      <table style="border-width: 2pt; font-size: 11pt;">
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">You can toggle text placement to above the grid (vertical layout, like much of this document) or besides (horizontal layout) by pressing Alt+0 on any selection:
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>text above
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>sample
+          </td>
+          </tr>
+          <tr>
+          <td>grid
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>text besides
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>sample
+          </td>
+          </tr>
+          <tr>
+          <td>grid
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">You can also choose from 3 different rendering methods to show nesting, Grid (like most of this document), Bubbles and Lines (see the Edit -&gt; Layout Render Style menu). Together with horizontal/vertical, this gives 6 different styles:
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td style="background-color: #FF8080;">
+        </td>
+        <td style="font-style: italic;background-color: #FF8080;">vertical
+        </td>
+        <td style="font-style: italic;background-color: #FF8080;">horizontal
+        </td>
+        </tr>
+        <tr>
+        <td style="font-weight: bold;background-color: #FF8080;">grid
+        </td>
+        <td>example text
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>nested grid
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>nested 1
+            </td>
+            </tr>
+            <tr>
+            <td>nested 2
+            </td>
+            </tr>
+            </table>
+          </td>
+          </tr>
+          <tr>
+          <td>one more line
+          </td>
+          </tr>
+          </table>
+        </td>
+        <td>example text
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>nested grid
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>nested 1
+            </td>
+            </tr>
+            <tr>
+            <td>nested 2
+            </td>
+            </tr>
+            </table>
+          </td>
+          </tr>
+          <tr>
+          <td>one more line
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td style="font-weight: bold;background-color: #FF8080;">bubbles
+        </td>
+        <td>example text
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>nested grid
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>nested 1
+            </td>
+            </tr>
+            <tr>
+            <td>nested 2
+            </td>
+            </tr>
+            </table>
+          </td>
+          </tr>
+          <tr>
+          <td>one more line
+          </td>
+          </tr>
+          </table>
+        </td>
+        <td>example text
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>nested grid
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>nested 1
+            </td>
+            </tr>
+            <tr>
+            <td>nested 2
+            </td>
+            </tr>
+            </table>
+          </td>
+          </tr>
+          <tr>
+          <td>one more line
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td style="font-weight: bold;background-color: #FF8080;">lines
+        </td>
+        <td>example text
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>nested grid
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>nested 1
+            </td>
+            </tr>
+            <tr>
+            <td>nested 2
+            </td>
+            </tr>
+            </table>
+          </td>
+          </tr>
+          <tr>
+          <td>one more line
+          </td>
+          </tr>
+          </table>
+        </td>
+        <td>example text
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>nested grid
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>nested 1
+            </td>
+            </tr>
+            <tr>
+            <td>nested 2
+            </td>
+            </tr>
+            </table>
+          </td>
+          </tr>
+          <tr>
+          <td>one more line
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">The different styles tend to work the best if you apply them to a whole document, but they can be set on a per cell basis if you want.
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>The "grid" style is best for editing, as it shows most clearly where you can insert new data.
+        </td>
+        </tr>
+        <tr>
+        <td>"bubbles" work best if you assign individual cell background colors. If you leave all cells the same color, TreeSheets automatically chooses alternate colors to avoid bubbles becoming invisible.
+        </td>
+        </tr>
+        <tr>
+        <td>The "lines" style is nice for mindmap style documents.
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      </table>
+    </td>
+    </tr>
+    <tr>
+    <td style="font-weight: bold;">Images &amp; Styles
+      <table style="border-width: 2pt; font-size: 11pt;">
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">Add Images to cells to make your document clearer. Images appear in front of the text of that cell. Put an image in its own cell for maximum flexibility. Try adding a (small) image to any cell above (menu Edit/Add Image, or pick one from the image drop down on the toolbar).
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>Images are stored inside a document (.cts) file, meaning if you move a file around, you will never lose the images. If you use an image multiple times in a document, only one copy is stored.
+        </td>
+        </tr>
+        <tr>
+        <td>If you'd like to refer to large images in a treesheet, and they would be too clumsy to have inside the sheet, you can also simply put the images in the same folder as the .cts, and simply put just their name in a cell. You can then use Edit/Open File (F4) to view them.
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>You can refer to any file type this way
+          </td>
+          </tr>
+          <tr>
+          <td>to conveniently add new file links, just drag and drop non-image files onto cells
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-style: italic;background-color: #FFFFFF;">Make a cell bold, or italic, or both! Try CTRL+b or CTRL+i on some cells, both are toggles. Additionally, typewriter and underlined style are available from the Edit/Text Style menu.
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;"><span style="text-decoration: line-through;">strikethrough (CTRL+t) is a useful style for TODO lists to indicate items that have been processed but you don't want to delete yet.</span>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">Try coloring cells with the two color selectors in the toolbar. You can double-click on the current colors to set them instantly. Select cell(s) that contain grid(s) and use the border color drop down, or Edit/Set Border Width menu to change their look.
+      </td>
+      </tr>
+      </table>
+    </td>
+    <td style="font-weight: bold;">Search &amp; Navigation
+      <table style="border-width: 2pt; font-size: 11pt;">
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">You can use instant search by typing something in the search box in the toolbar (CTRL+f to focus on this box). Any matching cells will be highlighted (F3 to cycle through the results). Type something in the replace box, and then use one of the two replace operations in the search menu.
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>As an alternative to search, "go to matching cell" (F6) cycles through the cells that have the same text as the current cell, which can be useful as a cross reference or a linking mechanism. It has preference for going to a cell with different formatting, meaning you can use formatting as a way to distinguish definition cells from link cells. Try it:
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>CycleCell
+          </td>
+          <td>...
+          </td>
+          <td>CycleCell
+          </td>
+          <td>CycleCell
+          </td>
+          </tr>
+          <tr>
+          <td style="font-weight: bold;">LinkRef
+          </td>
+          <td>...
+          </td>
+          <td style="font-style: italic;">LinkRef
+          </td>
+          <td style="font-style: italic;">LinkRef
+          </td>
+          </tr>
+          <tr>
+          <td>Definition
+          </td>
+          <td>
+          </td>
+          <td>Use
+          </td>
+          <td>Use
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">Store urls or collections of bookmarks inside TreeSheets, and simply press F5 to open any of them in your browser
+      </td>
+      </tr>
+      </table>
+    </td>
+    </tr>
+    <tr>
+    <td style="font-weight: bold;">Tags &amp; Hierarchy
+      <table style="border-width: 2pt; font-size: 11pt;">
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">Tags are a good way to deal with words that you use repeatedly in a sheet, like statuses, categories etc. To make something a tag, find an occurrence, and do "Add Cell as Tag" (Edit/Tag... menu). From now on, you can set any other cell to a tag with CTRL+Right Mouse Button (popup menu). Tags are colored blue, to signal to you it is a tag. This helps spotting if a tag is mistyped.
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">A powerful operation that works well with tags is "Hierarchy Swap". An Example of what it does:
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>The motivation behind Hierarchy Swap is that you use TreeSheets to organize your data in tree format, but often, trees are not ideal to organize data, because they force you to make choices about what subdivision is most important. 
+        </td>
+        </tr>
+        <tr>
+        <td>Say that I am organizing a project, and I am trying to keep track of what tasks it involves. I am using tags to indicate the people that work on it, the deliverables, and the topic areas:
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>milestone 1
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>front end
+              <table style="border-width: 2pt; font-size: 7pt;">
+              <tr>
+              <td>fred
+                <table style="border-width: 2pt; font-size: 6pt;">
+                <tr>
+                <td>fix the GUI
+                </td>
+                </tr>
+                <tr>
+                <td>connect to database
+                </td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              <tr>
+              <td>bob
+                <table style="border-width: 2pt; font-size: 6pt;">
+                <tr>
+                <td>overhaul graphics
+                </td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              </table>
+            </td>
+            </tr>
+            <tr>
+            <td>back end
+              <table style="border-width: 2pt; font-size: 7pt;">
+              <tr>
+              <td>fred
+                <table style="border-width: 2pt; font-size: 6pt;">
+                <tr>
+                <td>add input forms
+                </td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              </table>
+            </td>
+            </tr>
+            </table>
+          </td>
+          </tr>
+          <tr>
+          <td>milestone 2
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>back end
+              <table style="border-width: 2pt; font-size: 7pt;">
+              <tr>
+              <td>fred
+                <table style="border-width: 2pt; font-size: 6pt;">
+                <tr>
+                <td>set up new tables
+                </td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              <tr>
+              <td>bob
+                <table style="border-width: 2pt; font-size: 6pt;">
+                <tr>
+                <td>buy new servers
+                </td>
+                </tr>
+                <tr>
+                <td>set up networking
+                </td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              </table>
+            </td>
+            </tr>
+            </table>
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>Notice how in the above table, milestones are the most important subdivision, the topic areas second, and people the least important. This a pretty arbitrary choice, we might want to see things from a people perspective, and now with Hierarchy Swap you can! Select any occurrence of "fred", and press F8 twice, and you'll get this:
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>fred
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>milestone 1
+              <table style="border-width: 2pt; font-size: 7pt;">
+              <tr>
+              <td>front end
+                <table style="border-width: 2pt; font-size: 6pt;">
+                <tr>
+                <td>fix the GUI
+                </td>
+                </tr>
+                <tr>
+                <td>connect to database
+                </td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              </table>
+            </td>
+            </tr>
+            <tr>
+            <td>back end
+              <table style="border-width: 2pt; font-size: 7pt;">
+              <tr>
+              <td>milestone 1
+                <table style="border-width: 2pt; font-size: 6pt;">
+                <tr>
+                <td>add input forms
+                </td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              <tr>
+              <td>milestone 2
+                <table style="border-width: 2pt; font-size: 6pt;">
+                <tr>
+                <td>set up new tables
+                </td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              </table>
+            </td>
+            </tr>
+            </table>
+          </td>
+          </tr>
+          <tr>
+          <td>bob
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>milestone 1
+              <table style="border-width: 2pt; font-size: 7pt;">
+              <tr>
+              <td>front end
+                <table style="border-width: 2pt; font-size: 6pt;">
+                <tr>
+                <td>overhaul graphics
+                </td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              </table>
+            </td>
+            </tr>
+            <tr>
+            <td>milestone 2
+              <table style="border-width: 2pt; font-size: 7pt;">
+              <tr>
+              <td>back end
+                <table style="border-width: 2pt; font-size: 6pt;">
+                <tr>
+                <td>buy new servers
+                </td>
+                </tr>
+                <tr>
+                <td>set up networking
+                </td>
+                </tr>
+                </table>
+              </td>
+              </tr>
+              </table>
+            </td>
+            </tr>
+            </table>
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>Effectively what you've done is saying: "show me this hierarchy from fred's perspective". You can now see exactly what he works on. You could do the same for bob, if needed. If you want to see what fred is doing on the back end, press F8 just once on "back end" (within fred), and you have tweaked your perspective yet again. Press once more, and now front/back end becomes the major subdivision.
+        </td>
+        </tr>
+        <tr>
+        <td>Keep pressing F8 on various tags, to see how you can attain any perspective you need.
+        </td>
+        </tr>
+        <tr>
+        <td>Important to note is how on any swap, the tag that was previously the parent, now becomes the child of the selected tag. This means that it doesn't matter how often you do this swap, no information is lost. It means that you should be able to get the tree back in its original configuration if you wanted to.
+        </td>
+        </tr>
+        <tr>
+        <td>So you can see this feature as allowing you to have snippets of information which can have any number of tags associated with them. The Hierarchy Swap allows you to determine the current order of importancy of tags, and thus, the tree view is nothing but the most recent view
+        </td>
+        </tr>
+        <tr>
+        <td>You can still keep editing data to this tree whatever "view" it is in, no need to reset the tree to its original order. Trees like this have no set order!
+        </td>
+        </tr>
+        <tr>
+        <td>Note how promoting "fred" doesn't automatically promote "bob". TreeSheets doesn't know that these tags are of the same "type". Not all uses of tags have clear cut types, and its not always necessary to reorder all at once, so this keeps the feature simple.
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">Related to working with Hierarchies, is the ability to "Flatten" a hierarchy. Take the milestone example above, and after applying Flatten, you get
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>milestone 1
+        </td>
+        <td>front end
+        </td>
+        <td>fred
+        </td>
+        <td>fix the GUI
+        </td>
+        </tr>
+        <tr>
+        <td>milestone 1
+        </td>
+        <td>front end
+        </td>
+        <td>fred
+        </td>
+        <td>connect to database
+        </td>
+        </tr>
+        <tr>
+        <td>milestone 1
+        </td>
+        <td>front end
+        </td>
+        <td>bob
+        </td>
+        <td>overhaul graphics
+        </td>
+        </tr>
+        <tr>
+        <td>milestone 1
+        </td>
+        <td>back end
+        </td>
+        <td>fred
+        </td>
+        <td>add input forms
+        </td>
+        </tr>
+        <tr>
+        <td>milestone 2
+        </td>
+        <td>back end
+        </td>
+        <td>fred
+        </td>
+        <td>set up new tables
+        </td>
+        </tr>
+        <tr>
+        <td>milestone 2
+        </td>
+        <td>back end
+        </td>
+        <td>bob
+        </td>
+        <td>buy new servers
+        </td>
+        </tr>
+        <tr>
+        <td>milestone 2
+        </td>
+        <td>back end
+        </td>
+        <td>bob
+        </td>
+        <td>set up networking
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">While not as useful as the hierarchical version for editing and seeing structure, it is the only way to export this data to "flat" programs like spreadsheets (see Export/CSV). Spreadsheet users like to model data this way, so the reverse operation, "Hierarchify", allows you take such a table and turn it back into the hierarchy above.
+      </td>
+      </tr>
+      </table>
+    </td>
+    <td style="font-weight: bold;">Advanced operations
+      <table style="border-width: 2pt; font-size: 11pt;">
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">(25) if a cell has no text but it does have a grid, such as the cells below, it is rendered without space for the text. This may make it difficult to select, to be able to insert text. You can select any cell by simply pressing ESC when you have selected a sub-cell (try selecting (26), then ESC, then type some text). Also convenient, double clicking on a grid line selects the entire grid. Try this by double clicking between (26) and (27), then type some text.
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>this
+          </td>
+          <td>grid
+          </td>
+          <td>has
+          </td>
+          <td>no
+          </td>
+          <td>text
+          </td>
+          <td>header
+          </td>
+          <td>(26)
+          </td>
+          <td>(27)
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">Transposing is a useful operation if you're trying to rearange lists to get a more manageable layout. Select this cell, and Edit/Grid Reorganization/Transpose a few times. Make sure you have it showing vertically, and then additionally try Edit/Grid Reorganization/Sort after selecting either the first or second column.
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td style="background-color: #FFFF80;color: #800000;">One
+        </td>
+        <td style="background-color: #FFFF80;color: #800000;">Two
+        </td>
+        <td style="background-color: #FFFF80;color: #800000;">Three
+        </td>
+        <td style="background-color: #FFFF80;color: #800000;">Four
+        </td>
+        <td style="background-color: #FFFF80;color: #800000;">Five
+        </td>
+        </tr>
+        <tr>
+        <td style="background-color: #FFFF80;color: #800000;">1
+        </td>
+        <td style="background-color: #FFFF80;color: #800000;">2
+        </td>
+        <td style="background-color: #FFFF80;color: #800000;">3
+        </td>
+        <td style="background-color: #FFFF80;color: #800000;">4
+        </td>
+        <td style="background-color: #FFFF80;color: #800000;">5
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">Have a look at the many import and export options, or print to paper or pdf
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">The "Wrap in parent" (F9) operation is a great way to create new hierarchy. Make any selection of cells, and this operation will make those into a new grid, and a new parent that sits in the place of where the cells came from. For example, try selecting C &amp; D below, then press F9, and type something:
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>A
+        </td>
+        <td>B
+        </td>
+        <td>C
+        </td>
+        <td>D
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">Filters are a feature that is useful once your treesheets grow really big. They allow you to temporarily filter out a subset of the sheet to focus on the cells you're looking for. This works by forcing the cells that are filtered out to be displayed as 1-pixel text, and in light grey. Try out the filtering options in the view menu:
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>Try entering "treesheets" as search query right now. some cells will look red. Now try setting the search filter (View -&gt; Filter -&gt; Show only cells in current search), all the sheet should shrink considerably, making it easier to see what you're looking for. Do this at the top level view of this sheet. Try zooming in and out with the filter on. Try editing the search query, the filter view will change as you type.
+        </td>
+        </tr>
+        <tr>
+        <td>Try the "last 10% of edits" on this sheet, too. Make sure to turn the search query off, first. Note that if you have documents from older versions of treesheets, this feature may not show the edits that you expect, since those versions did not keep track of the last edit time of each cell yet.
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">If you're on an older computer, or work with really big sheets, try the option "fast line rendering" to get a sheet which is less pretty, but scrolls faster.
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">TreeSheets is great for presentations. Unlike traditional tools like powerpoint, which make it really difficult to convey a sense of structure to the audience, you can organize a treesheet as if your entire presentation was a single "slide", and have minimized sub-slides that you can zoom into. To help its use as a presentation tool, TreeSheets has two viewing options: Fullscreen View (F11) to reduce visual clutter, and Scaled View (F12) which tries to make the current view as large as possible.
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>Note, both this feature and printing make use of a scaling method that does not preserve rendering fidelity in all cases. This will be fixed in a future version.
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">TreeSheets has a built-in scripting language for creating plugins
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>These scripts are placed in the "scripts/" folder, and are automatically added to the "Scripts" menu at the start of TreeSheets, from where they can be started
+        </td>
+        </tr>
+        <tr>
+        <td>Scripts can read and modify all of the current TreeSheet!
+        </td>
+        </tr>
+        <tr>
+        <td>Scripts are written in The Lobster Programming language
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>Read more about the language:
+          </td>
+          <td>http://strlen.com/lobster/
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>The functions you can use in your script are listed in docs/script_reference.html
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>The ones that start with ts_ are specific to TreeSheets, the others are general language functions
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>Read the existing scripts to get an idea what they can do!
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">TreeSheets also contains a novel spreadsheet like programming language that is not fully functional yet.
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>It works by putting operations right inside grids, mixed with data
+        </td>
+        </tr>
+        <tr>
+        <td>the language then evaluates grids as an expression from left to right (and top to bottom) once you "run" the sheet. Select Program/Run (or the toolbar button) and the green square below should be filled with a 9 (not 7!) 
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>1
+          </td>
+          <td>+
+          </td>
+          <td>2
+          </td>
+          <td>*
+          </td>
+          <td>3
+          </td>
+          <td>
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>You create the program by giving certain cells special meaning. By default, all cells are white (data). From the Program/Mark As menu you can make them operations (pink), or view cells (light green). A view cell simply shows the current value of any operation before it. In the grid below, try marking the + as an operation, and the last empty cell as horizontal view using the program menu, then pressing run:
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>1
+          </td>
+          <td>+
+          </td>
+          <td>2
+          </td>
+          <td>
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>Operations automatically work on whole grids, for example:
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>1
+            </td>
+            </tr>
+            <tr>
+            <td>2
+            </td>
+            </tr>
+            <tr>
+            <td>3
+            </td>
+            </tr>
+            </table>
+          </td>
+          <td>+
+          </td>
+          <td>
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>4
+            </td>
+            </tr>
+            <tr>
+            <td>5
+            </td>
+            </tr>
+            <tr>
+            <td>6
+            </td>
+            </tr>
+            </table>
+          </td>
+          <td>*
+          </td>
+          <td>
+            <table style="border-width: 2pt; font-size: 8pt;">
+            <tr>
+            <td>7
+            </td>
+            </tr>
+            <tr>
+            <td>8
+            </td>
+            </tr>
+            <tr>
+            <td>9
+            </td>
+            </tr>
+            </table>
+          </td>
+          <td>
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>It is not recommended at this stage to actually use the language unless you're very adventurous, as only few operations are implemented, and many combinations of operands are not supported. Sort of working:
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>+
+          </td>
+          <td>-
+          </td>
+          <td>*
+          </td>
+          <td>/
+          </td>
+          <td>&lt;
+          </td>
+          <td>&gt;
+          </td>
+          <td>&lt;=
+          </td>
+          <td>&gt;=
+          </td>
+          <td>==
+          </td>
+          <td>!=
+          </td>
+          <td>=
+          </td>
+          <td>&lt;&gt;
+          </td>
+          <td>inc
+          </td>
+          <td>dec
+          </td>
+          <td>neg
+          </td>
+          <td>sum
+          </td>
+          <td>transpose
+          </td>
+          <td>if
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>For more details on operations, see Help &gt; Load operation reference (CTRL+ALT+F1).
+        </td>
+        </tr>
+        <tr>
+        <td>Have a look at the sales.cts example to see what it can do.
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">If you work on TreeSheets files on multiple computers, store them in a shared folder (such as DropBox) and turn on Options -&gt; Auto reload documents
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>This way, you will always be up to date on all your machines when you save the document
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      <tr>
+      <td style="font-weight: normal;background-color: #FFFFFF;">Running TreeSheets from the command line
+        <table style="border-width: 2pt; font-size: 10pt;">
+        <tr>
+        <td>You can run TreeSheets from the command line
+        </td>
+        </tr>
+        <tr>
+        <td>as arguments, you may specify a single file to load
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>If TreeSheets is already running in the system, this will cause it to pass the file to the existing instance, then quit
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>you may also run it with -p as an argument
+          <table style="border-width: 2pt; font-size: 9pt;">
+          <tr>
+          <td>This starts TreeSheets in "portable" mode, where (on Windows) it writes settings to a .ini file in the current directory rather than to the registry
+          </td>
+          </tr>
+          </table>
+        </td>
+        </tr>
+        <tr>
+        <td>Note that to run correctly from the command line, at least on Windows, TreeSheets.exe needs to be started with a full path, otherwise it will not be able to find its icons etc. relative to the executable path.
+        </td>
+        </tr>
+        </table>
+      </td>
+      </tr>
+      </table>
+    </td>
+    </tr>
+    </table>
+  </td>
+  </tr>
+  </table>
+</body>
+</html>
